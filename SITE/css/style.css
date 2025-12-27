@@ -36,6 +36,47 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+
+}
+/*logo  name*/
+header a{
+    color: var(--black);
+}
+header a:hover{
+    color: var(--blue);
+}
+header.logo{
+    font-size: 3rem;
+}
+header.logo span{
+    color: var(--blue);
+}
+/**navbar link*/
+header.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .navbar ul li {
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: var(--black);
+
+}
+header .navbar ul li a:hover{
+    color: var(--blue);
+}
+
+header.fa-bars{
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
 }
 
 
