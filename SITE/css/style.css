@@ -83,7 +83,7 @@ header .fa-bars{
     font-size: 3rem;
     color: var(--blue);
     cursor: pointer;
-    display: none;
+    display: block;
 }
 
 /* header navbar section end */
@@ -105,6 +105,8 @@ header .fa-bars{
         left: 0;
         width: 100%;
         background: var(--white);
+        display: none;        /* This hides the menu so jQuery can slide it */
+        border-top: .1rem solid rgba(0,0,0,.1);
         /* opacity:0; */
     }
 
