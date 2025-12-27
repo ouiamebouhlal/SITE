@@ -54,7 +54,7 @@ header.logo span{
     color: var(--blue);
 }
 /**navbar link*/
-header.navbar ul{
+header .navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
