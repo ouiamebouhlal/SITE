@@ -1,0 +1,54 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* root color */
+:root{
+    --black:#0188df;
+    --blue:#444d53;
+    --weght:#fff;
+
+}
+/*custom css*/
+*{
+    font-family: "Roboto", sans-serif;
+    margin:0 ; padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear .2s;     
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;  
+}
+
+
+
+
+/* header navbar section start*/
+header {
+    width: 96%;
+    background: var(--weight); /* Fixed spelling */
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* header navbar section end */
+
+
