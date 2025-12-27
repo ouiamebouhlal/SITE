@@ -105,10 +105,10 @@ header .fa-bars{
         z-index: 999;
     }
 
-    header .navbar ul{
-        flex-direction: column;
-        padding: 2rem 0;
-    }
+   header .navbar ul{ 
+    flex-flow: column; 
+    padding: 2rem 0;
+ }
 
     header .navbar ul li{
         margin: 1rem 0;
