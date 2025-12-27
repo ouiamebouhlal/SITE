@@ -89,23 +89,19 @@ header .fa-bars{
 /* header navbar section end */
 
 /* media query */
+/* hide navbar by default on mobile */
 @media(max-width:768px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header .fa-bars{
-        display: block;
-    }
-
     header .navbar{
         position: fixed;
         top: 5.5rem;
         left: 0;
         width: 100%;
         background: var(--white);
-        /* opacity:0; */
+        display: none; /* hide by default */
+    }
+
+    header .navbar.active{
+        display: block; /* show when active */
     }
 
     header .navbar ul{

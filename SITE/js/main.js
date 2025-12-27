@@ -1,6 +1,6 @@
 // navbar function
 $(document).ready(function(){
-    $('.fa-bar').click(function(){
+    $('.fa-bars').click(function(){
         $(this).toggleClass('fa-times');
     });
 });
