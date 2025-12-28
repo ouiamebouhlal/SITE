@@ -39,7 +39,7 @@ html{
 }
 .button:hover{
   border: .1rem solid var(--blue);
-  background:var(--wight) ;  
+  background:var(--white) ;  
   color: var(--blue);
   letter-spacing: .2rem;
 }
@@ -173,14 +173,16 @@ header .fa-times{
 }
 
 .home .content h1 span {
-    color: #0188df;          /* highlight certain words */
+    color: #609bee;          /* highlight certain words */
 }
 
 /* home section end */
 /* about section start */
 .about{
-    background: #f9f9f9;
+    background: #a3c9ef;
 }
+
+
 .about .box-container{
     padding: 4rem 0;
 }
@@ -192,7 +194,7 @@ header .fa-times{
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--wight);
+  background: var(--white);
 }
 /* about images*/
 .about .box-container .box .images{
@@ -220,8 +222,10 @@ padding: 2rem;
     align-items: start;
 }
 .about .box-container .box .content p{
-    font-size: 1.8rem;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem;
+    text-align:start ;
 }
 /* about section end */
 
@@ -253,13 +257,17 @@ padding: 2rem;
         display: block;
     }
 
-    header .navbar{
-        position: fixed;
-        top: -100rem;  left: 0;
-        width: 100%;
-        background: var(--wight);
-         opacity:0; 
-    }
+header .navbar{
+    position: fixed;
+    top: -100rem;  
+    left: 0;
+    width: 100%;
+    background: var(--wight);
+    opacity:0; 
+}
+
+
+
     header .navbar ul{
         flex-flow: column;
         padding: 2rem 0;
