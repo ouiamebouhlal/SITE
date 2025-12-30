@@ -1,0 +1,30 @@
+/*contact section start */
+.contact{
+    background: #eee;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.contact .row .images img{
+    width:50vw;
+    height: 70vh;
+}
+.contact .row .form-container{
+    width: 50%;
+    padding-right: 6rem;
+}
+.contact .row .form-container input,textarea{
+    height: 4rem;
+    width: 100%;
+    background: var(--wight);
+    border: none;
+    border: radius 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: var(--blue);
+    font-size: 1.7 ;
+}
