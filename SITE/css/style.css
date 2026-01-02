@@ -372,27 +372,28 @@ text-align: center;
     object-fit: cover; /* fill container without distortion */
 }
 
-}/*contact section start */
-.contact{
+ }
+ /*contact section start */
+ .contact{
     background: #eee;
-}
-.contact .row{
+ }
+ .contact .row{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
-}
+ }
 
-.contact .row .images img{
+ .contact .row .images img{
     width:50vw;
     height: 70vh;
-}
-.contact .row .form-container{
+ }
+ .contact .row .form-container{
     width: 50%;
     padding-right: 6rem;
     
-}
-.contact .row .form-container input,textarea{
+ }
+ .contact .row .form-container input,textarea{
     height: 4rem;
     width: 100%;
     background: var(--wight);
@@ -402,41 +403,40 @@ text-align: center;
     margin: 1rem 0;
     color: var(--blue);
     font-size: 1.7rem ;
-}
-.contact .row .form-container input:focus,textarea{
+ }
+ .contact .row .form-container input:focus,textarea{
     border: .2rem solid var(--blue);
-}
-.contact .row .form-container textarea{
+ }
+ .contact .row .form-container textarea{
     height: 20rem;
     border-radius: 1rem;
     padding: 1rem;
     resize: none;
-}
-.contact .row .form-container input[type="submit"]{
+ }
+ .contact .row .form-container input[type="submit"]{
     width: 17rem;
     background: var(--blue);
     color: var(--wight);
     cursor: pointer;
     font-size: 2rem;
-}
-.contact .row .form-container input[type="submit"]:hover{
+ }
+ .contact .row .form-container input[type="submit"]:hover{
     background: var(--wight);
     color: var(--blue);
     border: .2rem solid var(--blue);
-}
-.contact .row{
+ }
+ .contact .row{
     flex-flow: column;
-}
-.contact .row .images img{
+ }
+ .contact .row .images img{
     height: 50vh;
     width: 90vw;
-}
-.contact .row .form-container{
-    width: 90%;
+ }
+ .contact .row .form-container{
+   width: 90%;
     padding: 0;
-
-}
-/* bolg section start  */
+ }
+ /* blog section start  */
   .blog .box-container{
     display: flex;
     justify-content: center;
@@ -482,64 +482,182 @@ text-align: center;
  }
 
  .footer .box{
-  width: 30rem;
-  margin: 2rem;
-  text-align: center;
+    width: 30rem;
+    margin: 2rem;
+    text-align: center;
  }
 
  .footer .box:nth-child(1){
-  text-align: left;
+    text-align: left;
  }
 
-/* logo  */
+ /* logo  */
 
-.footer .box .logo{
-  padding: 2rem 0;
-  font-size: 3rem;
-  color: var(--wight);
-}
+ .footer .box .logo{
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: var(--wight);
+ }
 
-.footer .box .logo:hover{
-  color: var(--blue);
-}
+ .footer .box .logo:hover{
+    color: var(--blue);
+ }
 
-.footer .box .logo span{
-  color: var(--blue);
-}
+ .footer .box .logo span{
+    color: var(--blue);
+ }
 
-.footer .box p{
-  font-size: 1.5rem;
-  color: var(--wight);
-}
+ .footer .box p{
+    font-size: 1.5rem;
+    color: var(--wight);
+ }
 
-.footer .box a{
-  color: var(--wight);
-  font-size: 2rem;
-  display: block;
-  padding: .2rem 0;
-}
+ .footer .box a{
+    color: var(--wight);
+    font-size: 2rem;
+    display: block;
+    padding: .2rem 0;
+ }
 
-.footer .box a:hover{
-  text-decoration: underline;
-}
+ .footer .box a:hover{
+    text-decoration: underline;
+ } 
 
 
-.footer .credit{
-  width: 85%;
-  padding-top: 1rem;
-  font-size: 2rem;
-  color: var(--wight);
-  text-align: center;
-  border-top: .2rem solid var(--wight);
-}
+ .footer .credit{
+   width: 85%;
+   padding-top: 1rem;
+   font-size: 2rem;
+   color: var(--wight);
+   text-align: center;
+   border-top: .2rem solid var(--wight);
+ }
 
-.footer .credit span{
-  color: var(--blue);
-  text-decoration: underline;
-  letter-spacing: .5rem;
-}
+ .footer .credit span{
+   color: var(--blue);
+   text-decoration: underline;
+   letter-spacing: .5rem;
+ }
 
 
 
   /* footer section end  */
+ /*card section start*/
+ .card .container h3{
+    text-align: center;
+    font-size: 5rem;
+ }
+ .card .container h3::first-letter{
+    color: var(--blue);
+ }
+ .card .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
 
+ .card .box-container .box{
+    width: 30rem;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+ }
+
+ /*card images*/
+ .card .box-container .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .card .box-container .box .content{
+    padding: 1rem 1.3rem;
+ }
+
+ .card .box-container .box .content h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+ }
+
+ .card .box-container .box .content h2:hover{
+    color:var(--blue);
+    text-decoration: underline;
+ }
+
+ .card .box-container .box .content p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--black);
+ }
+
+ .card .box-container .box .content .icons{
+    text-align: center;
+ }
+
+ .card .box-container .box .content .icons a{
+    font-size: 2rem;
+    color: var(--blue);
+    margin: 1rem;
+ }
+ /*card section end*/
+ 
+
+ /*review section start*/
+ .review {
+    text-align: center;
+    font-size: 3rem;
+ }
+ .review h1::first-letter{
+    color: var(--blue);
+ }
+ .review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+ }
+ .review .box-container .box{
+    width: 35rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 4rem 1.5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+ }
+ /*images*/
+ .review .box-container .box .images{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: .5rem 0;
+    border-top: .1rem solid #333;
+ }
+ .review .box-container .box .images img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: .8rem 1rem;
+  }
+  .review .box-container .box i{
+    font-size: 6rem;
+    margin-top: -3rem;
+    color: var(--blue);
+    opacity: .4;
+  }
+
+  .review .box-container .box p{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 2rem 0;
+  }
+  .review .box-container .box .images .info h2{
+    font-size: 1rem;
+    color: var(--blue);
+  }
+  .review .box-container .box .images .info span{
+    font-size: 1rem;
+    color: var(--black);
+  }
+ /*review section end*/
