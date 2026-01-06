@@ -99,10 +99,6 @@ html{
     position: relative;
     z-index: 2;
 }
-:root{
-    --blue: #0d6efd;
-    --white: #ffffff;
-}
 
 
 /* title */
@@ -400,7 +396,7 @@ text-align: center;
  .contact .row .form-container input,textarea{
     height: 4rem;
     width: 100%;
-    background: var(--white);
+    background: var(--wight);
     border: none;
     border: radius 5rem;
     padding: 0 1rem;
