@@ -52,7 +52,7 @@
     <!--home heading-->
     <div class="content">
     <h1><span>Healing </span>hands ,<span> caring</span> hearts.</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>We care for you</p>
     <a href="#"><button class="button">Read More</button></a>
 </div>
 
@@ -110,21 +110,31 @@
 </section>
 
 <!-- contact-->
- <section id ="contact" class="contact"></section>
-    <h1 class="heading">contact us</h1>
-    <h3 class="title">You can talk to us any times,</h3>
+ <section id="contact" class="contact">
 
-    <div class="row">
-        <div class="images"></div>
-        <img src="img" alt="">
-    </div>
+    <h1 class="heading">Contact Us</h1>
+    <h3 class="title">You can talk to us any time,</h3>
+
     <div class="form-container">
-        <input type="text" placeholder="full name" name="" id="">
-        <input type="email" placeholder="enter your email" name="" id="">
-        <input type="number" placeholder="phone" name="" id="">
-        <textarea name="" placeholder="Tell us"..cols="30" rows="10"></textarea>
-        <input type="submit" id="button" value="send">
+        <form id="contactForm">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="number" placeholder="Phone" name="phone">
+            <textarea placeholder="Tell us" name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+        </form>
     </div>
+
+</section>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();  // prevent actual form submission
+    alert("Form sent!"); // optional user feedback
+    window.location.reload(); // refresh page after submit
+});
+</script>
+
 <!-- section contact end -->
 
 <!-- blog section start-->
@@ -180,7 +190,7 @@
                     </a>
                     <p>Preventing epidemics requires early detection, public awareness, and strong healthcare systems. Regular handwashing, vaccination, safe food practices, and rapid response to outbreaks help limit the spread of infectious diseases. Community cooperation plays a key role in protecting public health.</p>
                      <!-- button  -->
-                    <a href="#"> <button class="button">learn more</button></a>
+                    <a href="https://en.wikipedia.org/wiki/Pandemic_preventions"> <button class="button">learn more</button></a>
                 </div>
             </div>
             <!-- end here  -->

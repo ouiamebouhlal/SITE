@@ -17,7 +17,7 @@
     text-transform: capitalize;
     outline: none;
     box-sizing: border-box;
-    transition: all linear .2s;     
+    transition:all .2s linear;     
 }
 
 html{
@@ -374,68 +374,155 @@ text-align: center;
 
  }
  /*contact section start */
- .contact{
-    background: #eee;
- }
- .contact .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 0;
- }
+/* ===============================
+   CONTACT – FLOW BLUE BACKGROUND
+================================ */
 
- .contact .row .images img{
-    width:50vw;
-    height: 70vh;
- }
- .contact .row .form-container{
-    width: 50%;
-    padding-right: 6rem;
-    
- }
- .contact .row .form-container input,textarea{
-    height: 4rem;
+.contact{
+    position: relative;
+    background: linear-gradient(120deg, #1e90ff, #0a3d62);
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+/* FLOW LAYERS */
+.contact::before,
+.contact::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center,
+        rgba(255,255,255,.18),
+        transparent 60%);
+    animation: flow 20s linear infinite;
+}
+
+.contact::before{
+    top: -50%;
+    left: -50%;
+}
+
+.contact::after{
+    bottom: -50%;
+    right: -50%;
+    animation-duration: 28s;
+}
+
+/* FLOW ANIMATION */
+@keyframes flow{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* KEEP CONTENT ABOVE FLOW */
+.contact > *{
+    position: relative;
+    z-index: 2;
+}
+
+/* TITLES */
+.contact .heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.contact .title{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #e6f0ff;
+    margin-bottom: 2px;
+}
+.form-container{
+    background-color: #fff;
+    padding: 3.5rem;
+    border-radius: 2rem;
     width: 100%;
-    background: var(--wight);
-    border: none;
-    border: radius 5rem;
-    padding: 0 1rem;
-    margin: 1rem 0;
-    color: var(--blue);
-    font-size: 1.7rem ;
- }
- .contact .row .form-container input:focus,textarea{
-    border: .2rem solid var(--blue);
- }
- .contact .row .form-container textarea{
-    height: 20rem;
+    max-width: 450px;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.25);
+}
+
+.form-container input,
+.form-container textarea{
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 1.3rem 1.6rem;
     border-radius: 1rem;
-    padding: 1rem;
+    border: .15rem solid #ddd;
+    font-size: 1.6rem;
+}
+
+.form-container input:focus,
+.form-container textarea:focus{
+    border-color: #1e90ff;
+}
+
+.form-container textarea{
+    height: 15rem;
     resize: none;
- }
- .contact .row .form-container input[type="submit"]{
-    width: 17rem;
-    background: var(--blue);
-    color: var(--wight);
+}
+
+.form-container input[type="submit"]{
+    background: #1e90ff;
+    color: #fff;
+    font-size: 1.8rem;
     cursor: pointer;
-    font-size: 2rem;
- }
- .contact .row .form-container input[type="submit"]:hover{
-    background: var(--wight);
-    color: var(--blue);
-    border: .2rem solid var(--blue);
- }
- .contact .row{
-    flex-flow: column;
- }
- .contact .row .images img{
-    height: 50vh;
-    width: 90vw;
- }
- .contact .row .form-container{
-   width: 90%;
-    padding: 0;
- }
+    border-radius: 3rem;
+    margin-top: 1rem;
+}
+
+.form-container input[type="submit"]:hover{
+    background: #fff;
+    color: #1e90ff;
+    border: .2rem solid #1e90ff;
+}
+.contact {
+    position: relative;
+    background: linear-gradient(120deg, #1e90ff, #0a3d62);
+    min-height: 80vh; /* make the section tall enough */
+    
+    /* Center everything inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal center */
+    justify-content: center; /* vertical center */
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Optional: make the form box width responsive */
+.contact .form-container {
+    width: 100%;
+    max-width: 500px; /* adjust as needed */
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+}
+
+/* Inputs full width */
+.contact .form-container input,
+.contact .form-container textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .contact .row{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+}
+
  /* blog section start  */
   .blog .box-container{
     display: flex;
@@ -470,6 +557,22 @@ text-align: center;
     font-size: 1.3rem;
     color: var(--black);
   }
+  /* make the blog section background blue, boxes stay white */
+.blog {
+    background-color: var(--blue); /* section background */
+    padding: 4rem 0; /* optional spacing */
+}
+.blog .heading{
+    text-align: center;
+}
+.blog .title{
+    text-align: center;
+}
+.blog .box-container .box {
+    background-color: var(--white); /* keep boxes white */
+    color: var(--black); /* text color inside boxes */
+}
+
   /* bolg section end  */
 
   /* footer section start  */
@@ -660,4 +763,3 @@ text-align: center;
     font-size: 1rem;
     color: var(--black);
   }
- /*review section end*/
