@@ -763,3 +763,129 @@ text-align: center;
     font-size: 1rem;
     color: var(--black);
   }
+/*card section start*/
+ .card .container h3{
+    text-align: center;
+    font-size: 5rem;
+ }
+ .card .container h3::first-letter{
+    color: var(--blue);
+ }
+ .card .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .card .box-container .box{
+    width: 30rem;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+ }
+
+ /*card images*/
+#doctor.card {
+    background-image: url(C:\Users\PC\SITE\SITE\images\backgrounddoctorssection.jpeg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px; 
+    padding: 50px 0;
+}
+ .card .box-container .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .card .box-container .box .content{
+    padding: 1rem 1.3rem;
+ }
+
+ .card .box-container .box .content h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+ }
+
+ .card .box-container .box .content h2:hover{
+    color:var(--blue);
+    text-decoration: underline;
+ }
+
+ .card .box-container .box .content p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--black);
+ }
+
+ .card .box-container .box .content .icons{
+    text-align: center;
+ }
+
+ .card .box-container .box .content .icons a{
+    font-size: 2rem;
+    color: var(--blue);
+    margin: 1rem;
+ }
+ /*card section end*/
+ 
+
+ /*review section start*/
+ .review {
+    text-align: center;
+    font-size: 3rem;
+ }
+ .review h1::first-letter{
+    color: var(--blue);
+ }
+ .review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+ }
+ .review .box-container .box{
+    width: 35rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 4rem 1.5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+ }
+ /*images*/
+ .review .box-container .box .images{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: .5rem 0;
+    border-top: .1rem solid #333;
+ }
+ .review .box-container .box .images img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: .8rem 1rem;
+  }
+  .review .box-container .box i{
+    font-size: 6rem;
+    margin-top: -3rem;
+    color: var(--blue);
+    opacity: .4;
+  }
+
+  .review .box-container .box p{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 2rem 0;
+  }
+  .review .box-container .box .images .info h2{
+    font-size: 1rem;
+    color: var(--blue);
+  }
+  .review .box-container .box .images .info span{
+    font-size: 1rem;
+    color: var(--black);
+  }
